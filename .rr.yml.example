@@ -1,0 +1,10 @@
+rpc:
+  enable: true
+  listen: tcp://127.0.0.1:6001
+http:
+  address: :8080
+  workers:
+    command: "php worker.php"
+    pool:
+      numWorkers: 2
+      maxJobs: 1000
